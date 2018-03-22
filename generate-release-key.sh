@@ -6,7 +6,7 @@
 set -euo pipefail
 
 GPG_TEMP_HOME="$(pwd)/gpg-temp-home"
-KEY_NAME="${1:-Release Build}"
+KEY_NAME="${1:-Eucalyptus Build}"
 KEY_ADDR="${2:-build@appscale.com}"
 
 if [ ! -z "${GPG_TEMP_HOME}" ] && [ -d "${GPG_TEMP_HOME}" ] ; then
@@ -32,7 +32,7 @@ gpg-agent --homedir "${GPG_TEMP_HOME}" --daemon \
     --batch \
     "${GPG_TEMP_HOME}"/gen-params 2>/dev/null
 
-cat > RPM-GPG-KEY-eucalyptus-release <<EOF
+cat > RPM-GPG-KEY-eucalyptus-release-as <<EOF
 The following public key can be used to verify RPM packages built
 and signed by AppScale Systems, Inc for Eucalyptus releases.
 
@@ -40,15 +40,15 @@ EOF
 gpg2 --homedir "${GPG_TEMP_HOME}" --export --armour \
   2>/dev/null \
   | grep -v "^Version: " \
-  >> RPM-GPG-KEY-eucalyptus-release
+  >> RPM-GPG-KEY-eucalyptus-release-as
 
 echo ""
 echo ""
 echo "Generated for \"${KEY_NAME} <${KEY_ADDR}>\""
 echo ""
 echo ""
-echo "Public key output to RPM-GPG-KEY-eucalyptus-release, this should"
-echo "be committed to the eucalyptus-release repository."
+echo "Public key output to RPM-GPG-KEY-eucalyptus-release-as, this"
+echo "should be committed to the eucalyptus-release repository."
 echo ""
 echo ""
 echo "Private key for use in Jenkins, Manage Jenkins / Configure System"

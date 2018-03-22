@@ -29,7 +29,7 @@ This package contains release files, such as yum configs and various
 mkdir -p $RPM_BUILD_ROOT/etc/yum.repos.d
 cp -p eucalyptus.repo $RPM_BUILD_ROOT/etc/yum.repos.d/
 mkdir -p $RPM_BUILD_ROOT/etc/pki/rpm-gpg
-cp -p RPM-GPG-KEY-eucalyptus-release $RPM_BUILD_ROOT/etc/pki/rpm-gpg/
+cp -p RPM-GPG-KEY-eucalyptus-release* $RPM_BUILD_ROOT/etc/pki/rpm-gpg/
 
 
 %files

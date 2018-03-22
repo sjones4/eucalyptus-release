@@ -1,6 +1,7 @@
 [eucalyptus]
 name=Eucalyptus @PACKAGE_VERSION@ - $basearch
 baseurl=@RPM_REPO_URL@
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-eucalyptus-release
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-eucalyptus-release-as
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-eucalyptus-release
 gpgcheck=1
 enabled=1
