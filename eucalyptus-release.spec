@@ -1,10 +1,10 @@
 Name:           eucalyptus-release
-Version:        4.4
-Release:        2%{?dist}
+Version:        5
+Release:        1%{?dist}
 Summary:        Eucalyptus release files
 
 License:        GPLv3
-URL:            http://www.eucalyptus.com/
+URL:            https://eucalyptus.cloud/
 
 BuildArch:      noarch
 
@@ -38,6 +38,9 @@ cp -p RPM-GPG-KEY-eucalyptus-release* $RPM_BUILD_ROOT/etc/pki/rpm-gpg/
 
 
 %changelog
+* Tue Sep 11 2018 Steve Jones <steve.jones@appscale.com> - 5-1
+- Updated for appscale eucalyptus 5.x
+
 * Wed Feb 14 2018 Steve Jones <steve.jones@appscale.com> - 4.4-2
 - Updated for appscale eucalyptus 4.4
 

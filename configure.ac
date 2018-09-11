@@ -1,4 +1,4 @@
-AC_INIT([eucalyptus-release], 4.4)
+AC_INIT([eucalyptus-release], 5)
 RPM_REPO_URL="${RPM_REPO_URL}"
 AC_ARG_WITH(rpm-repository-url,
         [  --with-rpm-repository-url=<url>      where rpm packages are located],
