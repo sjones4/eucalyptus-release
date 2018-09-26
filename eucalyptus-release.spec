@@ -1,5 +1,5 @@
 Name:           eucalyptus-release
-Version:        4.4
+Version:        4.2
 Release:        2%{?dist}
 Summary:        Eucalyptus release files
 
@@ -38,14 +38,8 @@ cp -p RPM-GPG-KEY-eucalyptus-release* $RPM_BUILD_ROOT/etc/pki/rpm-gpg/
 
 
 %changelog
-* Wed Feb 14 2018 Steve Jones <steve.jones@appscale.com> - 4.4-2
-- Updated for appscale eucalyptus 4.4
-
-* Tue Mar 07 2017 Garrett Holmstrom <gholms@hpe.com> - 4.4-1
-- Updated for eucalyptus 4.4
-
-* Tue Apr 26 2016 Garrett Holmstrom <gholms@hpe.com> - 4.3-1
-- Updated for eucalyptus 4.3
+* Tue Sep 25 2018 Steve Jones <steve.jones@appscale.com> - 4.2-2
+- Backport for eucalyptus 4.2
 
 * Fri Oct 16 2015 Eucalyptus Release Engineering <support@eucalyptus.com> - 4.2-1
 - Updated for eucalyptus 4.2
